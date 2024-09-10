@@ -1,6 +1,4 @@
-.head{
-    border-bottom: solid 4px #5060d7;
-}
+
 
 .box{
     position:relative;
@@ -25,5 +23,38 @@
     justify-content: center;
     align-items: center; 
     flex-wrap: wrap; 
+}
+
+.head{
+    border-bottom: solid 4px #5060d7;
+}
+
+
+
+.column {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.column-right {
+    align-items: flex; 
+    margin-right: 45%; 
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+
+.image{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px; 
 }
 
