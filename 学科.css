@@ -1,5 +1,3 @@
-
-
 .box{
     position:relative;
     border-style: solid;
@@ -58,3 +56,15 @@
     margin-top: 10px; 
 }
 
+#ad{
+    position:absolute;
+    right:5%;
+    top:5%;
+    color:white;
+    background-color: green;
+}
+
+#提供{
+    border-bottom: 10px solid chocolate;
+    padding-bottom:0px;
+}
