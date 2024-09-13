@@ -56,16 +56,11 @@
 }
 
 
-
-
-
-/* 画像を自動調整 */
 #ad img {
     max-width: 100%;
     height: auto;
 }
 
-/* 親要素 */
 #ad {
     position: fixed;
     bottom: 0;
