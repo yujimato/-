@@ -61,17 +61,15 @@
     height: auto;
 }
 
-#outline{
-    position:fixed;
-    right:5%;
-}
-
 #ad {
     position: fixed;
     bottom: 0;
     left: 70%;
     display: flex;
-    a
 }
-b
+
+#outline{
+    position:fixed;
+    right:5%;
+}
 
