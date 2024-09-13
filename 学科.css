@@ -25,24 +25,24 @@
 
 .head{
     border-bottom: 4px solid rgb(25, 0, 255);
-    width: 300px; 
+    width: 400px; 
 }
 
 
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;   /* 行がいっぱいになると次の行に移る */
 }
 
 .column {
-    width: calc(50% - 10px);
-    margin-bottom: 30px;
-    margin-right: 10px;
+    width: calc(40% - 60px); /* 2つずつ並ぶように幅を50%に設定 */
+    margin-bottom: 30px;      /* 要素の間に少し余白を追加 */
+    margin-right: 40px;       /* 隣接する要素の間隔を設定 */
 }
 
 .column:nth-child(2n) {
-    margin-right: 0;
+    margin-right: 0;  /* 2つごとに右側の余白を無くす */
 }
 
 
@@ -56,15 +56,24 @@
 }
 
 
+
+
+
+/* 画像を自動調整 */
 #ad img {
     max-width: 100%;
     height: auto;
 }
 
-
+/* 親要素 */
 #ad {
     position: fixed;
     bottom: 0;
-    left: 30%;
+    left: 70%;
     display: flex;
+}
+
+#outline{
+    position:fixed;
+    right:5%;
 }
