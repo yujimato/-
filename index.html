@@ -3,106 +3,82 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="学科.css">
-        <title>本免試験練習</title>
-        <style>
-        .answer{
-            color:red;
-            margin-left: 5px;
-            display:none;
-            position:absolute;
-            bottom:5px;
-        }
-
-        .quiz{
-            position:absolute;
-            left:25px;
-            bottom:5px;
-        }
-
-        
-
-        </style>
-        <script defer src="./テスト.js"></script>
-        <script defer src="./学科.js"></script>
+        <title>学科シケプリ</title>
     </head>
     <body>
-    <div id="complete">
-        <h2 class=head>本免の練習</h2>
-        <div class="container">
-            <div class="box"><img width="60px" height="60px" src="https://hyoushiki.graph.jp/3kisei/327-2a_00.jpg">左の標識のあるとこでは大型貨物・特定中型貨物・大型特殊自動車は最も左側を通行しなければいけない。<br>
-                <input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-            
-            <div class="box"><img width="60px" height="60px" src="https://www.menkyo-school.jp/sign/images/01/17.png">左の標識のあるとこでは、自動車は原付を追い越してはいけない<br>
-                <input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-    
-            <div class="box"><img width="60px" height="60px" src="https://d35n75zpqqqtvn.cloudfront.net/img/goods/L/4066133690.jpg">俺は左のマークを2日連続で無視して、山形弁でガチギレされたことがある。<br>
-                <input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-    
-            <div class="box">昼間、故障のために一般道路で駐車するときは停止表示機材を置いたり、トランクやボンネットを開けて、故障車であることがわかるようにする。<br>
-                <input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-    
-            <div class="box">普通２輪免許を取ってから３年経った人は、大型２輪免許を取ったその日から、高速で二人乗りしても良い
-                <br><input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-            
-            <div class="box">高速には路側帯がない
-                <br><input type="button" value="答え" class="quiz"><div class="answer">❌</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-            
-            <div class="box">二輪車の乗車姿勢は、前屈みになる程風圧が少なくなるので運転しやすくなる。
-                <br><input type="button" value="答え" class="quiz"><div class="answer">❌</div><input type="button" class="delete" value="もうええわ！">
-            </div>
+        
 
-            <div class="box">原付は３車線の道路では２段階右折しなきゃいけない。
-                <br><input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
+        <div style="margin-left: 8%;">
+            <h2 style="background-color:aqua; display:inline-block; ">理科一類16組に届いたらいいな　学科シケプリ</h2>
+        </div>
+        
+        <ol id="outline">
+            <h3>目次</h3>
+            <li><span></span><a href="#column1">知識まとめ</a></li>
+            <li><span></span><a href="#column2">練習問題</a></li>
+            <li><span></span><a href="#column3">教習所情報</a></li>
+            <li><span></span><a href="#column4">本免取得までの流れ</a></li>
+            <li><span></span><a href="#column5">免許センター情報</a></li>
+        </ol>
 
-            <div class="box">昼でも駐停車の際はハザードをつけなきゃいけない
-                <br><input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-            
-            <div class="box"><img width="60px" height="60px" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Japan_road_sign_325-2.svg">これは自転車横断帯である
-                <br><input type="button" value="答え" class="quiz"><div class="answer">❌</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-            
-            <div class="box">普通自動車の座席には、荷物を積んではいけない
-                <br><input type="button" value="答え" class="quiz"><div class="answer">❌</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-
-            <div class="box"><img width="60px" height="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomGMaP8OP75cCLxlmNJ-c00Kll7yf9HzTug&s">左のとこでは、軽車両の通行は可能だが、車が中に入って停車するのはダメ。
-                <br><input type="button" value="答え" class="quiz"><div class="answer">❌</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-
-            <div class="box">二輪車では前傾の方が風圧が減り、運転しやすい
-                <br><input type="button" value="答え" class="quiz"><div class="answer">❌</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-
-            <div class="box">自動車の右側に3.5m以上の余地がない道路で、荷物を積むため車のそばで、運転者だ指図しながら10分間車を止めた。
-                <br><input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-
-            <div class="box"><img width="60px" height="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_qHPmOSMfm50hJlWgazLJJMKHcyLi6htlQ&s">ここは原付も走っちゃいけない
-                <br><input type="button" value="答え" class="quiz"><div class="answer">⭕️</div><input type="button" class="delete" value="もうええわ！">
-            </div>
-
-            <div class="box">
-                <br><input type="button" value="答え" class="quiz"><div class="answer"></div><input type="button" class="delete" value="もうええわ！">
-            </div>
-
-            <div class="box">
-                <br><input type="button" value="答え" class="quiz"><div class="answer"></div><input type="button" class="delete" value="もうええわ！">
-            </div>
-
-            <div class="box">
-                <br><input type="button" value="答え" class="quiz"><div class="answer"></div><input type="button" class="delete" value="もうええわ！">
-            </div>
+        <div id="ad">
+            <a href="https://menkyo.career-tasu.jp/yamagatamogami">
+            <img width="80%" height="20%" src="https://i.ibb.co/fr1GtKS/56-20240912140413.jpg">
+            </a>
         </div>
 
-        
-    <div>
+        <div class="flex-container">
+            <div class="column">
+                <h4 id=column1 class="head">知識まとめ</h4>
+                <div class="image">
+                <a href="仮免.html">
+                    <img width="100px" height="300px" src="https://i.ibb.co/QrcKRBz/image.jpg">
+                </a>
+                <a href="本免.html">
+                    <img width="100px" height="300px" src="https://i.ibb.co/rwgSLHs/image.jpg">
+                </a>
+                </div>
+            </div>
+    
+            <div class="column">
+                <h4 id=column2 class="head">練習問題</h4>
+                <a href="仮免練習問題.html">
+                    <img width="100px" height="300px" src="https://i.ibb.co/3SYLrqm/image.jpg">
+                </a>
+                <a href="本免練習問題.html">
+                    <img width="100px" height="300px" src="https://i.ibb.co/mH4TN4T/image.jpg">
+                </a>
+            </div>
+            
+            <div class="column">
+                <h4 id=column3 class="head">教習所情報</h4>
+                    東京都の教習所情報は<a href="https://www.tadsa.or.jp/introduce/">ここをクリック</a><br>
+                    全国の教習所一覧は<a href="https://www.zensiren.or.jp/nwide-info/">ここをクリック</a><br><br>
+                    <div style="color:brown; font-size: large; margin:5px;">教習所の決め方</div>
+                    <span style="color:yellow; background-color: black">合宿</span><br>
+                    <span style="font-size: large;">・価格 </span>->　夏休みは高くなりがちだけど、早めに予約取ればまだ安い。5月中に購買の横の免許センターみたいなとこ行くべき。めんどくさがってたけど、意外と15分くらいで予約まで完了する。<br><br>
+                    <span style="font-size: large;">・場所 </span>->　田舎でも往復の交通費はある程度支給されるので、そこまで心配する必要はない。ただ、コンビニやご飯屋さんから遠いとキツイので、ちゃんと地方都市に近い教習所を選ぶべき。<br><br>
+                    <span style="color:yellow; background-color: black; margin:5px;">通い</span>
+                    <br>・家に近いところがいい
+            </div>
+            
+            <div class="column">
+                <h4 id=column4 class="head">本免取得までの流れ</h4>
+                仮免 -> 卒業試験 -> 本免試験<br>
+                教習所では卒業試験まで行う。卒業試験で合格したら、本免試験を受けられる。そして、私が伝えたいことは結局こういうことですよ。<br><span style="font-size: large;color:red">卒業試験は学科ないから、仮免試験終わったら、勉強する必要ないんだぜー！<br>Love & Peace!    Love & Peace! <br>  Love & Peace!  Love & Peace! Love & Peace!…</span>
+            </div>
+
+            <div class="column">
+                <h4 id=column5 class="head">免許センター情報</h4>
+                本免の学科試験は自分の住所のあるところでしか受けられない。<br>
+                東京の学科試験会場は<a href="https://www.keishicho.metro.tokyo.lg.jp/menkyo/koshin/koshin/koshin02.html">こちら</a><br>
+                <div style="font-size: small;">⚠️東京は完全予約制。調布、鮫洲は駅からめちゃ遠い。江東は東陽町から歩いて10分くらいでいい感じ。</div>
+                全国の学科試験会場は<a href="https://www.gasyukumenkyo.com/guide/center/">こちら</a>
+            </div>
+            
+                
+        </div>
+
+        <script src="./学科.js"></script>
     </body>
 </html>
